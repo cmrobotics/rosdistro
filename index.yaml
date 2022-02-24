@@ -3,8 +3,12 @@
 # see REP 143: http://ros.org/reps/rep-0143.html
 ---
 distributions:
+  foxy:
+    distribution: [foxy/distribution.yaml]
+    distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/foxy-cache.yaml.gz
   rolling:
     distribution: [rolling/distribution.yaml]
     distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/rolling-cache.yaml.gz
 type: index
 version: 3
+
