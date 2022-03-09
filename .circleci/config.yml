@@ -69,8 +69,6 @@ jobs:
             git remote add upstream https://github.com/ros/rosdistro
             git fetch upstream master
             git checkout -b update/bot-updating
-            git add foxy/distribution.yaml
-            git rebase upstream/master update/bot-updating
             git merge --commit --no-edit upstream/master
 
   merge_and_push:
