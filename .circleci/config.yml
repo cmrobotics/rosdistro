@@ -69,6 +69,7 @@ jobs:
             git remote add upstream https://github.com/ros/rosdistro
             git fetch upstream master
             git checkout -b update/bot-updating
+            git rebase master update/bot-updating
             git merge --commit --no-edit upstream/master
 
   merge_and_push:
