@@ -104,6 +104,7 @@ jobs:
           name: Install dependencies
           command: |
             apt update -y
+            apt install systemd -y
             timedatectl set-timezone Europe/Copenhagen
             apt install python3-rosdistro -y
       - run:
