@@ -105,6 +105,7 @@ jobs:
           command: |
             ln -fs /usr/share/zoneinfo/Europe/Copenhagen /etc/localtime
             DEBIAN_FRONTEND=noninteractive apt update -y && apt install -y --no-install-recommends tzdata
+            apt install git -y
             apt install python3-rosdistro -y
       - run:
           name: Produce the cache
