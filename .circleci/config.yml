@@ -109,7 +109,9 @@ jobs:
             apt install python3-rosdistro -y
       - run:
           name: Produce the cache
-          command: rosdistro_build_cache --include-source ./index.yaml
+          command: |
+            curl -u LotzBot:${GITHUB_BOT_TOKEN} https://api.github.com/user
+            rosdistro_build_cache --include-source ./index.yaml
       - store_artifacts: # Store the files as artifacts in case someone wants to download them later
           path: ./foxy-cache.yaml.gz
       - save_cache: # Store the files in the cache to use in other steps
