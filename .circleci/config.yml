@@ -94,7 +94,7 @@ jobs:
             git checkout -b update/bot-updating
             git merge --commit --no-edit upstream/master
             # Push quitely to prevent showing the token in the log
-            git push -q https://${GITHUB_BOT_TOKEN}@github.com/cmrobotics/rosdistro cmr
+            git push -q https://${GITHUB_TOKEN}@github.com/cmrobotics/rosdistro cmr
 
   generate_rosdistro_cache:
     docker:
@@ -118,7 +118,9 @@ jobs:
           command: |
             git config user.email "91249588+LotzBot@users.noreply.github.com"
             git config user.name "LotzBot"
-            gh auth login --with-token ${GITHUB_BOT_TOKEN}
+            echo "$GITHUB_TOKEN" > .githubtoken
+            gh auth login --with-token < .githubtoken
+            rm .githubtoken
             rosdistro_build_cache --include-source ./index.yaml
       - store_artifacts: # Store the files as artifacts in case someone wants to download them later
           path: ./foxy-cache.yaml.gz
@@ -140,4 +142,4 @@ jobs:
           key: images_to_upload
       - run:
           name: Push the cache to GitHub
-          command: ./push_cache.sh ${GITHUB_BOT_TOKEN} ./foxy-cache.yaml.gz
+          command: ./push_cache.sh ${GITHUB_TOKEN} ./foxy-cache.yaml.gz
