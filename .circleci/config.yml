@@ -115,16 +115,17 @@ jobs:
             git config user.name "LotzBot"
             rosdistro_build_cache --include-source ./index.yaml
       - store_artifacts: # Store the files as artifacts in case someone wants to download them later
-          path: ./foxy-cache.yaml.gz
+          path: ./foxy-cache.yaml
       - save_cache: # Store the files in the cache to use in other steps
           key: images_to_upload
           paths:
-            - ./foxy-cache.yaml
+            - ./foxy-cache.yaml.gz
 
   update_rosdistro_cache:
     docker:
       - image: ubuntu:hirsute
     steps:
+      - checkout
       - run:
           name: Install dependencies
           command: |
