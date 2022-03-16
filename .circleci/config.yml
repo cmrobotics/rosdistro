@@ -131,6 +131,8 @@ jobs:
           command: |
             apt update -y
             apt install curl -y
+            apt install python -y
+            apt install file -y
       - attach_workspace: # Restores the cached files
           at: .
       - run:
