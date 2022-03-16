@@ -51,7 +51,7 @@ workflows:
 jobs:
   validate_merge:
     docker:
-      - image: ubuntu:focal
+      - image: ubuntu:hirsute
     steps:
       - checkout
       - run:
@@ -73,7 +73,7 @@ jobs:
 
   merge_and_push:
     docker:
-      - image: ubuntu:focal
+      - image: ubuntu:hirsute
     steps:
       - checkout
       - run:
@@ -98,7 +98,7 @@ jobs:
 
   generate_rosdistro_cache:
     docker:
-      - image: ubuntu:focal
+      - image: ubuntu:hirsute
     steps:
       - checkout
       - run:
@@ -124,7 +124,7 @@ jobs:
 
   update_rosdistro_cache:
     docker:
-      - image: ubuntu:focal
+      - image: ubuntu:hirsute
     steps:
       - run:
           name: Install dependencies
