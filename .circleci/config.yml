@@ -80,7 +80,6 @@ jobs:
           name: Install dependencies
           command: |
             apt update -y
-
             apt install git -y
       - run:
           name: Sync with the upstream repo and push
@@ -130,7 +129,7 @@ jobs:
           name: Install dependencies
           command: |
             apt update -y
-            apt instsall curl -y
+            apt install curl -y
       - restore_cache: # Restores the cached files
           key: images_to_upload
       - run:
