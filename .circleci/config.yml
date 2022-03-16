@@ -116,9 +116,9 @@ jobs:
             rosdistro_build_cache --include-source ./index.yaml
       - store_artifacts: # Store the files as artifacts in case someone wants to download them later
           path: foxy-cache.yaml
-      - save_cache: # Store the files in the cache to use in other steps
-          key: images_to_upload
-          paths:
+      - persist_to_workspace: # Store the files in the cache to use in other steps
+          root: .
+          paths: 
             - foxy-cache.yaml.gz
 
   update_rosdistro_cache:
@@ -131,8 +131,8 @@ jobs:
           command: |
             apt update -y
             apt install curl -y
-      - restore_cache: # Restores the cached files
-          key: images_to_upload
+      - attach_workspace: # Restores the cached files
+          at: .
       - run:
           name: Push the cache to GitHub
           command: ./push_cache.sh ${GITHUB_BOT_TOKEN} foxy-cache.yaml.gz
