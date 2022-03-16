@@ -115,11 +115,11 @@ jobs:
             git config user.name "LotzBot"
             rosdistro_build_cache --include-source ./index.yaml
       - store_artifacts: # Store the files as artifacts in case someone wants to download them later
-          path: ./foxy-cache.yaml
+          path: foxy-cache.yaml
       - save_cache: # Store the files in the cache to use in other steps
           key: images_to_upload
           paths:
-            - ./foxy-cache.yaml.gz
+            - foxy-cache.yaml.gz
 
   update_rosdistro_cache:
     docker:
@@ -135,4 +135,4 @@ jobs:
           key: images_to_upload
       - run:
           name: Push the cache to GitHub
-          command: ./push_cache.sh ${GITHUB_BOT_TOKEN} ./foxy-cache.yaml.gz
+          command: ./push_cache.sh ${GITHUB_BOT_TOKEN} foxy-cache.yaml.gz
