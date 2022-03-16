@@ -80,6 +80,7 @@ jobs:
           name: Install dependencies
           command: |
             apt update -y
+
             apt install git -y
       - run:
           name: Sync with the upstream repo and push
@@ -108,10 +109,16 @@ jobs:
             apt install git -y
             apt install curl -y
             apt install python3-rosdistro -y
+            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null            
+            apt update -y
+            apt install gh -y
       - run:
           name: Produce the cache
           command: |
-            curl -u LotzBot:${GITHUB_BOT_TOKEN} https://api.github.com/user
+            git config user.email "91249588+LotzBot@users.noreply.github.com"
+            git config user.name "LotzBot"
+            gh auth login --with-token < ${GITHUB_BOT_TOKEN}
             rosdistro_build_cache --include-source ./index.yaml
       - store_artifacts: # Store the files as artifacts in case someone wants to download them later
           path: ./foxy-cache.yaml.gz
