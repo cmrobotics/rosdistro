@@ -6,9 +6,9 @@ distributions:
   foxy:
     distribution: [foxy/distribution.yaml]
     distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/foxy-cache.yaml.gz
-  rolling:
-    distribution: [rolling/distribution.yaml]
-    distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/rolling-cache.yaml.gz
+  galactic:
+    distribution: [galactic/distribution.yaml]
+    distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/galactic-cache.yaml.gz
 type: index
 version: 3
 

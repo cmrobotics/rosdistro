@@ -9,10 +9,10 @@ distributions:
     distribution_status: active
     distribution_type: ros2
     python_version: 3
-  rolling:
-    distribution: [rolling/distribution.yaml]
-    distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/rolling-cache.yaml.gz
-    distribution_status: rolling
+  galactic:
+    distribution: [galactic/distribution.yaml]
+    distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/galactic-cache.yaml.gz
+    distribution_status: active
     distribution_type: ros2
     python_version: 3
 type: index

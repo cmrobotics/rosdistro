@@ -5137,5 +5137,20 @@ repositories:
       url: https://github.com/ros2/yaml_cpp_vendor.git
       version: galactic
     status: maintained
+  cmr_msgs:
+    doc:
+      type: git
+      url: https://github.com/cmrobotics/cmr_msgs.git
+      version: 0.0.1
+    release:
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/cmrobotics/cmr_msgs-release.git
+      version: 0.0.1-1
+    source:
+      type: git
+      url: https://github.com/cmrobotics/cmr_msgs.git
+      version: 0.0.1
+    status: maintained
 type: distribution
 version: 2
