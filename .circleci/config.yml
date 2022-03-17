@@ -115,7 +115,7 @@ jobs:
             git config user.name "LotzBot"
             rosdistro_build_cache --include-source ./index.yaml
       - store_artifacts: # Store the files as artifacts in case someone wants to download them later
-          path: *-cache.yaml
+          path: galactic-cache.yaml
       - persist_to_workspace: # Store the files in the cache to use in other steps
           root: .
           paths: 
