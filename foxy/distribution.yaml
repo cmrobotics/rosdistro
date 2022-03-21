@@ -6023,7 +6023,7 @@ repositories:
     release:
       tags:
         release: release/foxy/{package}/{version}
-      url: git@github.com:cmrobotics/diff_drive2.git
+      url: git@github.com:cmrobotics/diff_drive2-release.git
       version: 0.0.1-1
     source:
       type: git
