@@ -10,5 +10,5 @@ distributions:
     distribution: [galactic/distribution.yaml]
     distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/galactic-cache.yaml.gz
 type: index
-version: 4
+version: 3
 
