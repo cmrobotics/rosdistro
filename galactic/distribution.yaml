@@ -5152,5 +5152,20 @@ repositories:
       url: git@github.com:cmrobotics/cmr_msgs.git
       version: 0.0.1
     status: maintained
+  diff_drive2:
+    doc:
+      type: git
+      url: git@github.com:cmrobotics/diff_drive2.git
+      version: 0.0.1
+    release:
+      tags:
+        release: release/galactic/{package}/{version}
+      url: git@github.com:cmrobotics/diff_drive2.git
+      version: 0.0.1-1
+    source:
+      type: git
+      url: git@github.com:cmrobotics/diff_drive2.git
+      version: 0.0.1
+    status: developed
 type: distribution
 version: 2
