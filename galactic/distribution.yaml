@@ -5138,34 +5138,17 @@ repositories:
       version: galactic
     status: maintained
   cmr_msgs:
-    doc:
-      type: git
-      url: git@github.com:cmrobotics/cmr_msgs.git
-      version: 0.0.1
     release:
-      tags:
-        release: release/galactic/{package}/{version}
-      url: git@github.com:cmrobotics/cmr_msgs-release.git
-      version: 0.0.1-1
+      url: git@github.com:cmrobotics/cmr_msgs.git
     source:
       type: git
       url: git@github.com:cmrobotics/cmr_msgs.git
-      version: 0.0.1
-    status: maintained
+      version: galactic-devel
   diff_drive2:
-    doc:
-      type: git
-      url: git@github.com:cmrobotics/diff_drive2.git
-      version: 0.0.1
     release:
-      tags:
-        release: release/galactic/{package}/{version}
-      url: git@github.com:cmrobotics/diff_drive2-release.git
-      version: 0.0.1-1
-    source:
-      type: git
       url: git@github.com:cmrobotics/diff_drive2.git
-      version: 0.0.1
-    status: developed
+    source:
+      url: git@github.com:cmrobotics/diff_drive2.git
+      version: galactic-devel
 type: distribution
 version: 2

@@ -6011,24 +6011,16 @@ repositories:
     status: maintained
   cmr_msgs:
     release:
-      tags:
-        release: release/foxy/{package}/{version}
-      url: git@github.com:cmrobotics/cmr_msgs-release.git
-      version: 0.0.1-1
-  diff_drive2:
-    doc:
-      type: git
-      url: git@github.com:cmrobotics/diff_drive2.git
-      version: 0.0.1
-    release:
-      tags:
-        release: release/foxy/{package}/{version}
-      url: git@github.com:cmrobotics/diff_drive2-release.git
-      version: 0.0.1-1
+      url: git@github.com:cmrobotics/cmr_msgs.git
     source:
       type: git
+      url: git@github.com:cmrobotics/cmr_msgs.git
+      version: galactic-devel
+  diff_drive2:
+    release:
       url: git@github.com:cmrobotics/diff_drive2.git
-      version: 0.0.1
-    status: developed
+    source:
+      url: git@github.com:cmrobotics/diff_drive2.git
+      version: galactic-devel
 type: distribution
 version: 2
