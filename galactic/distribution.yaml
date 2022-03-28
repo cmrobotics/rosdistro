@@ -5258,7 +5258,7 @@ repositories:
     source:
       url: git@github.com:cmrobotics/j1939framework.git
       version: galactic-devel
-  imu_bno055:
+  bno055_imu:
     release:
       url: git@github.com:cmrobotics/imu_bno055.git
     source:
@@ -5342,5 +5342,23 @@ repositories:
     source:
       url: git@github.com:cmrobotics/ros2_numpy.git
       version: galactic-devel
+  sick_safetyscanners_base:
+    release:
+      url: git@github.com:cmrobotics/sick_safetyscanners_base.git
+    source:
+      url: git@github.com:cmrobotics/sick_safetyscanners_base.git
+      version: cpp-standalone
+  sick_safetyscanners2_interfaces:
+    release:
+      url: git@github.com:cmrobotics/sick_safetyscanners2_interfaces.git
+    source:
+      url: git@github.com:cmrobotics/sick_safetyscanners2_interfaces.git
+      version: master
+  joy_to_twist2:
+    release:
+      url: git@github.com:cmrobotics/joy_to_twist.git
+    source:
+      url: git@github.com:cmrobotics/joy_to_twist.git
+      version: master
 type: distribution
 version: 2
