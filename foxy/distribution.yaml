@@ -6232,5 +6232,11 @@ repositories:
     source:
       url: git@github.com:cmrobotics/joy_to_twist.git
       version: master
+  costmap_converter_msgs:
+    release:
+      url: git@github.com:cmrobotics/costmap_converter.git
+    source:
+      url: git@github.com:cmrobotics/costmap_converter.git
+      version: galactic-devel
 type: distribution
 version: 2
