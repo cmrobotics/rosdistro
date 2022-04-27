@@ -9,36 +9,6 @@ distributions:
   galactic:
     distribution: [galactic/distribution.yaml]
     distribution_cache: https://github.com/cmrobotics/rosdistro/releases/download/running-release/galactic-cache.yaml.gz
-  groovy:
-    distribution: [groovy/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/groovy-cache.yaml.gz
-  humble:
-    distribution: [humble/distribution.yaml]
-    distribution_cache: http://repo.ros2.org/rosdistro_cache/humble-cache.yaml.gz
-  hydro:
-    distribution: [hydro/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/hydro-cache.yaml.gz
-  indigo:
-    distribution: [indigo/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/indigo-cache.yaml.gz
-  jade:
-    distribution: [jade/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/jade-cache.yaml.gz
-  kinetic:
-    distribution: [kinetic/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/kinetic-cache.yaml.gz
-  lunar:
-    distribution: [lunar/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/lunar-cache.yaml.gz
-  melodic:
-    distribution: [melodic/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/melodic-cache.yaml.gz
-  noetic:
-    distribution: [noetic/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/noetic-cache.yaml.gz
-  rolling:
-    distribution: [rolling/distribution.yaml]
-    distribution_cache: http://repo.ros2.org/rosdistro_cache/rolling-cache.yaml.gz
 type: index
 version: 3
 
