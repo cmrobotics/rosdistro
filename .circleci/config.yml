@@ -91,7 +91,7 @@ jobs:
             git remote add upstream https://github.com/ros/rosdistro
             git fetch upstream master
             git checkout -b update/bot-updating
-            git merge --commit --no-edit upstream/master
+            git merge --commit --no-edit --strategy-option ours upstream/master
             # Push quitely to prevent showing the token in the log
             git push -q https://${GITHUB_BOT_TOKEN}@github.com/cmrobotics/rosdistro cmr
 
