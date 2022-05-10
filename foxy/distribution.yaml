@@ -6798,5 +6798,11 @@ repositories:
     source:
       url: git@github.com:cmrobotics/costmap_converter.git
       version: galactic-devel
+  cmr_tests_utils:
+    release:
+      url: git@github.com:cmrobotics/cmr_tests_utils.git
+    source:
+      url: git@github.com:cmrobotics/cmr_tests_utils.git
+      version: galactic-devel
 type: distribution
 version: 2
