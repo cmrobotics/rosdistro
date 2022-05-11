@@ -6804,5 +6804,11 @@ repositories:
     source:
       url: git@github.com:cmrobotics/cmr_tests_utils.git
       version: galactic-devel
+  footprint_updater_server:
+    release:
+      url: git@github.com:cmrobotics/footprint_updater_server.git
+    source:
+      url: git@github.com:cmrobotics/footprint_updater_server.git
+      version: galactic-devel
 type: distribution
 version: 2
