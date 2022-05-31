@@ -8,6 +8,247 @@ release_platforms:
   ubuntu:
   - focal
 repositories:
+  cmr_msgs:
+    release:
+      url: git@github.com:cmrobotics/cmr_msgs.git
+    source:
+      type: git
+      url: git@github.com:cmrobotics/cmr_msgs.git
+      version: galactic-devel
+  diff_drive2:
+    release:
+      url: git@github.com:cmrobotics/diff_drive2.git
+    source:
+      url: git@github.com:cmrobotics/diff_drive2.git
+      version: galactic-devel
+  sick_safetyscanners2:
+    release:
+      url: git@github.com:cmrobotics/sick_safetyscanners2.git
+    source:
+      url: git@github.com:cmrobotics/sick_safetyscanners2.git
+      version: galactic-devel
+  laser_filters:
+    release:
+      url: git@github.com:cmrobotics/laser_filters.git
+    source:
+      url: git@github.com:cmrobotics/laser_filters.git
+      version: galactic-devel
+  cmr_lifecycle_manager:
+    release:
+      url: git@github.com:cmrobotics/cmr_lifecycle_manager.git
+    source:
+      url: git@github.com:cmrobotics/cmr_lifecycle_manager.git
+      version: galactic-devel
+  locations_utils:
+    release:
+      url: git@github.com:cmrobotics/locations_utils.git
+    source:
+      url: git@github.com:cmrobotics/locations_utils.git
+      version: galactic-devel
+  sys_utils:
+    release:
+      url: git@github.com:cmrobotics/sys_utils.git
+    source:
+      url: git@github.com:cmrobotics/sys_utils.git
+      version: galactic-devel
+  result:
+    release:
+      url: git@github.com:cmrobotics/result.git
+    source:
+      url: git@github.com:cmrobotics/result.git
+      version: galactic-devel
+  spi_interface:
+    release:
+      url: git@github.com:cmrobotics/spi_interface.git
+    source:
+      url: git@github.com:cmrobotics/spi_interface.git
+      version: galactic-devel
+  serena_end_to_end_test:
+    release:
+      url: git@github.com:cmrobotics/serena_end_to_end_test.git
+    source:
+      url: git@github.com:cmrobotics/serena_end_to_end_test.git
+      version: galactic-devel
+  odom_publisher_simulation:
+    release:
+      url: git@github.com:cmrobotics/odom_publisher_simulation.git
+    source:
+      url: git@github.com:cmrobotics/odom_publisher_simulation.git
+      version: galactic-devel
+  backward_ros:
+    release:
+      url: git@github.com:cmrobotics/backward_ros.git
+    source:
+      url: git@github.com:cmrobotics/backward_ros.git
+      version: galactic-devel
+  serena_bringup:
+    release:
+      url: git@github.com:cmrobotics/serena_bringup.git
+    source:
+      url: git@github.com:cmrobotics/serena_bringup.git
+      version: galactic-devel
+  serena_description:
+    release:
+      url: git@github.com:cmrobotics/serena_description.git
+    source:
+      url: git@github.com:cmrobotics/serena_description.git
+      version: galactic-devel
+  hardware_ctrl:
+    release:
+      url: git@github.com:cmrobotics/hardware_ctrl.git
+    source:
+      url: git@github.com:cmrobotics/hardware_ctrl.git
+      version: galactic-devel
+  cmr_launch_utils:
+    release:
+      url: git@github.com:cmrobotics/cmr_launch_utils.git
+    source:
+      url: git@github.com:cmrobotics/cmr_launch_utils.git
+      version: galactic-devel
+  linak_actuator_modbus:
+    release:
+      url: git@github.com:cmrobotics/linak_actuator_modbus.git
+    source:
+      url: git@github.com:cmrobotics/linak_actuator_modbus.git
+      version: galactic-devel
+  pumba_kacanopen:
+    release:
+      url: git@github.com:cmrobotics/pumba_kacanopen.git
+    source:
+      url: git@github.com:cmrobotics/pumba_kacanopen.git
+      version: galactic-devel
+  battery_interface:
+    release:
+      url: git@github.com:cmrobotics/battery_interface.git
+    source:
+      url: git@github.com:cmrobotics/battery_interface.git
+      version: galactic-devel
+  j1939framework:
+    release:
+      url: git@github.com:cmrobotics/j1939framework.git
+    source:
+      url: git@github.com:cmrobotics/j1939framework.git
+      version: galactic-devel
+  bno055_imu:
+    release:
+      url: git@github.com:cmrobotics/imu_bno055.git
+    source:
+      url: git@github.com:cmrobotics/imu_bno055.git
+      version: galactic-devel
+  nav2_relative_move:
+    release:
+      url: git@github.com:cmrobotics/nav2_relative_move.git
+    source:
+      url: git@github.com:cmrobotics/nav2_relative_move.git
+      version: galactic-devel
+  nav2_relative_move_msgs:
+    release:
+      url: git@github.com:cmrobotics/nav2_relative_move_msgs.git
+    source:
+      url: git@github.com:cmrobotics/nav2_relative_move_msgs.git
+      version: galactic-devel
+  docking_controller:
+    release:
+      url: git@github.com:cmrobotics/docking_controller.git
+    source:
+      url: git@github.com:cmrobotics/docking_controller.git
+      version: galactic-devel
+  behaviour_trees:
+    release:
+      url: git@github.com:cmrobotics/behaviour_trees.git
+    source:
+      url: git@github.com:cmrobotics/behaviour_trees.git
+      version: galactic-devel
+  teb_local_planner:
+    release:
+      url: git@github.com:cmrobotics/teb_local_planner.git
+    source:
+      url: git@github.com:cmrobotics/teb_local_planner.git
+      version: galactic-devel
+  costmap_converter:
+    release:
+      url: git@github.com:cmrobotics/costmap_converter.git
+    source:
+      url: git@github.com:cmrobotics/costmap_converter.git
+      version: galactic-devel
+  leg_filter:
+    release:
+      url: git@github.com:cmrobotics/leg_filter.git
+    source:
+      url: git@github.com:cmrobotics/leg_filter.git
+      version: galactic-devel
+  sensor_fusion:
+    release:
+      url: git@github.com:cmrobotics/sensor_fusion.git
+    source:
+      url: git@github.com:cmrobotics/sensor_fusion.git
+      version: galactic-devel
+  shelf_detector:
+    release:
+      url: git@github.com:cmrobotics/shelf_detector.git
+    source:
+      url: git@github.com:cmrobotics/shelf_detector.git
+      version: galactic-devel
+  serena_led:
+    release:
+      url: git@github.com:cmrobotics/serena_led.git
+    source:
+      url: git@github.com:cmrobotics/serena_led.git
+      version: galactic-devel
+  bt_rviz_plugins:
+    release:
+      url: git@github.com:cmrobotics/bt_rviz_plugins.git
+    source:
+      url: git@github.com:cmrobotics/bt_rviz_plugins.git
+      version: galactic-devel
+  locations_rviz_plugins:
+    release:
+      url: git@github.com:cmrobotics/locations_rviz_plugins.git
+    source:
+      url: git@github.com:cmrobotics/locations_rviz_plugins.git
+      version: galactic-devel
+  ros2_numpy:
+    release:
+      url: git@github.com:cmrobotics/ros2_numpy.git
+    source:
+      url: git@github.com:cmrobotics/ros2_numpy.git
+      version: galactic-devel
+  sick_safetyscanners_base:
+    release:
+      url: git@github.com:cmrobotics/sick_safetyscanners_base.git
+    source:
+      url: git@github.com:cmrobotics/sick_safetyscanners_base.git
+      version: cpp-standalone
+  sick_safetyscanners2_interfaces:
+    release:
+      url: git@github.com:cmrobotics/sick_safetyscanners2_interfaces.git
+    source:
+      url: git@github.com:cmrobotics/sick_safetyscanners2_interfaces.git
+      version: master
+  joy_to_twist2:
+    release:
+      url: git@github.com:cmrobotics/joy_to_twist.git
+    source:
+      url: git@github.com:cmrobotics/joy_to_twist.git
+      version: master
+  costmap_converter_msgs:
+    release:
+      url: git@github.com:cmrobotics/costmap_converter.git
+    source:
+      url: git@github.com:cmrobotics/costmap_converter.git
+      version: galactic-devel
+  cmr_tests_utils:
+    release:
+      url: git@github.com:cmrobotics/cmr_tests_utils.git
+    source:
+      url: git@github.com:cmrobotics/cmr_tests_utils.git
+      version: galactic-devel
+  footprint_updater_server:
+    release:
+      url: git@github.com:cmrobotics/footprint_updater_server.git
+    source:
+      url: git@github.com:cmrobotics/footprint_updater_server.git
+      version: galactic-devel
   SMACC2:
     doc:
       type: git
@@ -5976,247 +6217,6 @@ repositories:
       url: https://github.com/ros/xacro.git
       version: ros2
     status: maintained
-  cmr_msgs:
-    release:
-      url: git@github.com:cmrobotics/cmr_msgs.git
-    source:
-      type: git
-      url: git@github.com:cmrobotics/cmr_msgs.git
-      version: galactic-devel
-  diff_drive2:
-    release:
-      url: git@github.com:cmrobotics/diff_drive2.git
-    source:
-      url: git@github.com:cmrobotics/diff_drive2.git
-      version: galactic-devel
-  sick_safetyscanners2:
-    release:
-      url: git@github.com:cmrobotics/sick_safetyscanners2.git
-    source:
-      url: git@github.com:cmrobotics/sick_safetyscanners2.git
-      version: galactic-devel
-  laser_filters:
-    release:
-      url: git@github.com:cmrobotics/laser_filters.git
-    source:
-      url: git@github.com:cmrobotics/laser_filters.git
-      version: galactic-devel
-  cmr_lifecycle_manager:
-    release:
-      url: git@github.com:cmrobotics/cmr_lifecycle_manager.git
-    source:
-      url: git@github.com:cmrobotics/cmr_lifecycle_manager.git
-      version: galactic-devel
-  locations_utils:
-    release:
-      url: git@github.com:cmrobotics/locations_utils.git
-    source:
-      url: git@github.com:cmrobotics/locations_utils.git
-      version: galactic-devel
-  sys_utils:
-    release:
-      url: git@github.com:cmrobotics/sys_utils.git
-    source:
-      url: git@github.com:cmrobotics/sys_utils.git
-      version: galactic-devel
-  result:
-    release:
-      url: git@github.com:cmrobotics/result.git
-    source:
-      url: git@github.com:cmrobotics/result.git
-      version: galactic-devel
-  spi_interface:
-    release:
-      url: git@github.com:cmrobotics/spi_interface.git
-    source:
-      url: git@github.com:cmrobotics/spi_interface.git
-      version: galactic-devel
-  serena_end_to_end_test:
-    release:
-      url: git@github.com:cmrobotics/serena_end_to_end_test.git
-    source:
-      url: git@github.com:cmrobotics/serena_end_to_end_test.git
-      version: galactic-devel
-  odom_publisher_simulation:
-    release:
-      url: git@github.com:cmrobotics/odom_publisher_simulation.git
-    source:
-      url: git@github.com:cmrobotics/odom_publisher_simulation.git
-      version: galactic-devel
-  backward_ros:
-    release:
-      url: git@github.com:cmrobotics/backward_ros.git
-    source:
-      url: git@github.com:cmrobotics/backward_ros.git
-      version: galactic-devel
-  serena_bringup:
-    release:
-      url: git@github.com:cmrobotics/serena_bringup.git
-    source:
-      url: git@github.com:cmrobotics/serena_bringup.git
-      version: galactic-devel
-  serena_description:
-    release:
-      url: git@github.com:cmrobotics/serena_description.git
-    source:
-      url: git@github.com:cmrobotics/serena_description.git
-      version: galactic-devel
-  hardware_ctrl:
-    release:
-      url: git@github.com:cmrobotics/hardware_ctrl.git
-    source:
-      url: git@github.com:cmrobotics/hardware_ctrl.git
-      version: galactic-devel
-  cmr_launch_utils:
-    release:
-      url: git@github.com:cmrobotics/cmr_launch_utils.git
-    source:
-      url: git@github.com:cmrobotics/cmr_launch_utils.git
-      version: galactic-devel
-  linak_actuator_modbus:
-    release:
-      url: git@github.com:cmrobotics/linak_actuator_modbus.git
-    source:
-      url: git@github.com:cmrobotics/linak_actuator_modbus.git
-      version: galactic-devel
-  pumba_kacanopen:
-    release:
-      url: git@github.com:cmrobotics/pumba_kacanopen.git
-    source:
-      url: git@github.com:cmrobotics/pumba_kacanopen.git
-      version: galactic-devel
-  battery_interface:
-    release:
-      url: git@github.com:cmrobotics/battery_interface.git
-    source:
-      url: git@github.com:cmrobotics/battery_interface.git
-      version: galactic-devel
-  j1939framework:
-    release:
-      url: git@github.com:cmrobotics/j1939framework.git
-    source:
-      url: git@github.com:cmrobotics/j1939framework.git
-      version: galactic-devel
-  bno055_imu:
-    release:
-      url: git@github.com:cmrobotics/imu_bno055.git
-    source:
-      url: git@github.com:cmrobotics/imu_bno055.git
-      version: galactic-devel
-  nav2_relative_move:
-    release:
-      url: git@github.com:cmrobotics/nav2_relative_move.git
-    source:
-      url: git@github.com:cmrobotics/nav2_relative_move.git
-      version: galactic-devel
-  nav2_relative_move_msgs:
-    release:
-      url: git@github.com:cmrobotics/nav2_relative_move_msgs.git
-    source:
-      url: git@github.com:cmrobotics/nav2_relative_move_msgs.git
-      version: galactic-devel
-  docking_controller:
-    release:
-      url: git@github.com:cmrobotics/docking_controller.git
-    source:
-      url: git@github.com:cmrobotics/docking_controller.git
-      version: galactic-devel
-  behaviour_trees:
-    release:
-      url: git@github.com:cmrobotics/behaviour_trees.git
-    source:
-      url: git@github.com:cmrobotics/behaviour_trees.git
-      version: galactic-devel
-  teb_local_planner:
-    release:
-      url: git@github.com:cmrobotics/teb_local_planner.git
-    source:
-      url: git@github.com:cmrobotics/teb_local_planner.git
-      version: galactic-devel
-  costmap_converter:
-    release:
-      url: git@github.com:cmrobotics/costmap_converter.git
-    source:
-      url: git@github.com:cmrobotics/costmap_converter.git
-      version: galactic-devel
-  leg_filter:
-    release:
-      url: git@github.com:cmrobotics/leg_filter.git
-    source:
-      url: git@github.com:cmrobotics/leg_filter.git
-      version: galactic-devel
-  sensor_fusion:
-    release:
-      url: git@github.com:cmrobotics/sensor_fusion.git
-    source:
-      url: git@github.com:cmrobotics/sensor_fusion.git
-      version: galactic-devel
-  shelf_detector:
-    release:
-      url: git@github.com:cmrobotics/shelf_detector.git
-    source:
-      url: git@github.com:cmrobotics/shelf_detector.git
-      version: galactic-devel
-  serena_led:
-    release:
-      url: git@github.com:cmrobotics/serena_led.git
-    source:
-      url: git@github.com:cmrobotics/serena_led.git
-      version: galactic-devel
-  bt_rviz_plugins:
-    release:
-      url: git@github.com:cmrobotics/bt_rviz_plugins.git
-    source:
-      url: git@github.com:cmrobotics/bt_rviz_plugins.git
-      version: galactic-devel
-  locations_rviz_plugins:
-    release:
-      url: git@github.com:cmrobotics/locations_rviz_plugins.git
-    source:
-      url: git@github.com:cmrobotics/locations_rviz_plugins.git
-      version: galactic-devel
-  ros2_numpy:
-    release:
-      url: git@github.com:cmrobotics/ros2_numpy.git
-    source:
-      url: git@github.com:cmrobotics/ros2_numpy.git
-      version: galactic-devel
-  sick_safetyscanners_base:
-    release:
-      url: git@github.com:cmrobotics/sick_safetyscanners_base.git
-    source:
-      url: git@github.com:cmrobotics/sick_safetyscanners_base.git
-      version: cpp-standalone
-  sick_safetyscanners2_interfaces:
-    release:
-      url: git@github.com:cmrobotics/sick_safetyscanners2_interfaces.git
-    source:
-      url: git@github.com:cmrobotics/sick_safetyscanners2_interfaces.git
-      version: master
-  joy_to_twist2:
-    release:
-      url: git@github.com:cmrobotics/joy_to_twist.git
-    source:
-      url: git@github.com:cmrobotics/joy_to_twist.git
-      version: master
-  costmap_converter_msgs:
-    release:
-      url: git@github.com:cmrobotics/costmap_converter.git
-    source:
-      url: git@github.com:cmrobotics/costmap_converter.git
-      version: galactic-devel
-  cmr_tests_utils:
-    release:
-      url: git@github.com:cmrobotics/cmr_tests_utils.git
-    source:
-      url: git@github.com:cmrobotics/cmr_tests_utils.git
-      version: galactic-devel
-  footprint_updater_server:
-    release:
-      url: git@github.com:cmrobotics/footprint_updater_server.git
-    source:
-      url: git@github.com:cmrobotics/footprint_updater_server.git
-      version: galactic-devel
   yaml_cpp_vendor:
     release:
       tags:
