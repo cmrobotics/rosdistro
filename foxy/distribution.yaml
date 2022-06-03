@@ -6810,5 +6810,11 @@ repositories:
     source:
       url: git@github.com:cmrobotics/footprint_updater_server.git
       version: galactic-devel
+  collision_checker_server:
+    release:
+      url: git@github.com:cmrobotics/collision_checker_server.git
+    source:
+      url: git@github.com:cmrobotics/collision_checker_server.git
+      version: galactic-devel
 type: distribution
 version: 2
